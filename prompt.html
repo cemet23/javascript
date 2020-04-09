@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" onclick="panggilPrompt()" name="button">Klik</button>
+    <p id="jawaban"></p>
+  </body>
+  <script type="text/javascript">
+    function panggilPrompt() {
+      var nama = prompt("Masukan nama kamu","Nama");
+      if (nama != null) {
+        document.getElementById("jawaban").innerHTML = "Hello "+nama+", apa kabar!";
+      }
+    }
+  </script>
+</html>
